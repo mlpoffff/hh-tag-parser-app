@@ -1,6 +1,6 @@
 <template>
   <UTooltip text="Скопировать содержимое">
-    <div class="flex bg-gray-100 px-2 py-1 w-fit rounded-xl">
+    <div class="flex bg-gray-100 px-2 py-1 w-fit h-fit rounded-xl">
       <p>{{ tag }} ({{ count }})</p>
     </div>
   </UTooltip>

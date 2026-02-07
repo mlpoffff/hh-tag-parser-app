@@ -31,8 +31,6 @@ const link = 'https://github.com/mlpoffff/hh-tag-parser-app'
       </template>
 
       <template #right>
-        <UColorModeButton />
-
         <UButton
           :to="link"
           target="_blank"

@@ -1,5 +1,4 @@
 import { defineStore } from 'pinia'
-import axios from 'axios'
 
 export const useVacanciesStore = defineStore('vacancies', {
   state: () => ({
@@ -11,14 +10,15 @@ export const useVacanciesStore = defineStore('vacancies', {
     async parse(query: string, lastPage: number) {
       this.loading = true
       this.tags = null
+      console.error(query)
       try {
-        const tags = await axios.get('http://localhost:3001/parse-vacancies', {
-          params: {
-            query: query,
-            lastPage: lastPage
+        const tags = await $fetch('/api/parse-vacancies', {
+          query: {
+            query,
+            lastPage
           }
         })
-        this.tags = tags.data
+        this.tags = tags
       } catch (e) {
         console.error(e)
       } finally {

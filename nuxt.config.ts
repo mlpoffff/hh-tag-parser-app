@@ -1,4 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
+const buildMode = process.env.BUILD_MODE
+
+
 export default defineNuxtConfig({
   modules: [
     '@nuxt/eslint',
@@ -14,6 +17,12 @@ export default defineNuxtConfig({
 
   devtools: {
     enabled: true
+  },
+
+  colorMode: {
+    preference: 'light',
+    fallback: 'light',
+    classSuffix: ''
   },
 
   css: ['~/assets/css/main.css'],

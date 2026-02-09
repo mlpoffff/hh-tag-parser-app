@@ -1,6 +1,6 @@
-appId: com.author.project-name
-productName: project-name
-executableName: project-name
+appId: com.mlpoffff.hh-tag-parser
+productName: hh-tag-parser
+executableName: hh-tag-parser
 asar: false
 
 files:
@@ -15,7 +15,7 @@ win:
 nsis:
   oneClick: false
   allowToChangeInstallationDirectory: true
-  shortcutName: project-name
+  shortcutName: hh-tag-parser
   createDesktopShortcut: true
   createStartMenuShortcut: true
   installerSidebar: electron/build_assets/sidebar.bmp

@@ -1,8 +1,8 @@
 {
-  "name": "parser",
+  "name": "hh-tag-parser",
   "main": "electron/electron.js",
   "version": "1.0.0",
-  "author": "author",
+  "author": "mlpoffff",
   "description": "description",
   "type": "module",
   "scripts": {

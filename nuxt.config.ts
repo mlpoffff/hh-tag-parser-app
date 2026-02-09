@@ -19,6 +19,14 @@ export default defineNuxtConfig({
     enabled: true
   },
 
+  ssr: false,
+
+  nitro: {
+    preset: buildMode === 'static'
+      ? 'static'
+      : 'node-server'
+  },
+
   colorMode: {
     preference: 'light',
     fallback: 'light',

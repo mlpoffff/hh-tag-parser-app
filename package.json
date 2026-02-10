@@ -3,7 +3,7 @@
   "main": "electron/electron.js",
   "version": "1.0.0",
   "author": "mlpoffff",
-  "description": "description",
+  "description": "Приложение для парсинга тегов вакансий с hh.ru",
   "type": "module",
   "scripts": {
     "build": "nuxt build",
